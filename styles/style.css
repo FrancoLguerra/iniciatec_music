@@ -1,0 +1,23 @@
+.list-opc{
+    list-style: none;
+}
+
+.nav{
+    padding: 1px 1rem;
+    background: rgb(20, 22, 22);
+}
+
+
+.nav .list-opc{
+    display: flex;
+    justify-content:  space-evenly;
+}
+
+a{
+    color: white;
+}
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
