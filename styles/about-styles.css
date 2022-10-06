@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-.contenido-about{
+.contenido-miembros{
     width: 70%;
     height: 70%;
     display: flex;
@@ -26,10 +26,12 @@
     transition: 0.5s;
 }
 .card-miembros__img{
-    width:40%;
+    width:80%;
+ padding-right: 1%;
 }
 .card-miembros__img > img{
 width: 100%;
+height: 100%;
 }
 .card-miembros__info{
     width: 40%;
@@ -38,4 +40,37 @@ width: 100%;
 
 .card-miembros__info > h3,p{
     width: 100%;
+}
+.contenido-iniciatec{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.contenido-form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
 }
