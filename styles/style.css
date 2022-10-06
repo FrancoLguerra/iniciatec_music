@@ -1,6 +1,12 @@
+*{
+  font-family: 'Kanit', sans-serif;
+  font-size:16px
 
+}
 
 .container-hero{
+
+
 
     background-image: linear-gradient( rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/img-hero.jpg")  !important ;
     background-position: center;
@@ -50,12 +56,13 @@
   }
   
   a {
-    font-family: "Bungee", cursive;
+    font-family: 'Kanit', sans-serif;
     font-size: 2.5em;
   }
   
   .link-one {
     color: #d96053;
+
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
   }
@@ -313,7 +320,7 @@
 
 
   .link-four {
-    color: #d96053;
+    color: #7253d9;
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
   }
@@ -334,9 +341,12 @@
     top: 0;
     right: 0;
     background-color: #d96053;
-  
+    
     clip-path: circle(0% at 50% calc(50%));
-    transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+   
+    
+    transition: clip-path 1s cubic-bezier(.17,.67,.8,-0.54);
+    
   }
   
   .link-four:hover::before {
@@ -365,6 +375,19 @@
     );
   
     /*
+
+
+    clip-path: polygon(
+      40% 0%,
+      60% 0%,
+      60% 0%,
+      40% 0%,
+      40% 100%,
+      60% 100%,
+      60% 100%,
+      40% 100%
+    );
+
     Didn't look consistently awesome enough
     across different viewing widths.
     clip-path: polygon(
@@ -425,12 +448,14 @@
     clip-path: polygon(
       40% 10%,
       60% 10%,
-      60% 35%,
       40% 35%,
+      40% 35%,
+
+
       40% 90%,
       60% 90%,
       60% 65%,
-      40% 65%
+      40% 90%
     );
   }
   
