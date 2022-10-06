@@ -4,6 +4,12 @@
 
 }
 
+body{
+  background: #2d2d2e;
+}
+main{
+  height: 100vh;
+}
 .container-hero{
 
 
@@ -26,7 +32,11 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-
+/*
+    box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
+-webkit-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
+-moz-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
+*/
 }
   
   .background-one {
@@ -37,13 +47,13 @@
     background-color: #151515;
   }
   
+
+
   .background-three {
     background-color: #151515;
   }
   
-  .background-four {
-    background-color: #151515;
-  }
+
 
   .link-container {
     display: flex;
@@ -60,10 +70,20 @@
     font-size: 2.5em;
   }
   
+
+    /*
+    negro: #151515
+    about: #d96053
+    rankin: #f27b9b
+    genero:  #eb7132
+
+    */
+
+
   .link-one {
     color: #d96053;
 
-    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
+    transition: color 1s cubic-bezier(.32, 0, 0.67, 0);
     line-height: 1em;
   }
   
@@ -316,146 +336,66 @@
 
 
 
-
-
-
-  .link-four {
-    color: #7253d9;
-    transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
-    line-height: 1em;
-  }
-  
-  .link-four:hover {
-    color: #111;
-    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
-  
-    /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
-  }
-  
-  .link-four::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #d96053;
-    
-    clip-path: circle(0% at 50% calc(50%));
-   
-    
-    transition: clip-path 1s cubic-bezier(.17,.67,.8,-0.54);
-    
-  }
-  
-  .link-four:hover::before {
-    clip-path: circle(100% at 50% 50%);
-  }
-  
-  .link-four::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
+  .container-footer{
     background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-collaborators{
   
-    clip-path: polygon(
-      40% 0%,
-      60% 0%,
-      60% 0%,
-      40% 0%,
-      40% 100%,
-      60% 100%,
-      60% 100%,
-      40% 100%
-    );
-  
-    /*
+    display: flex;
+    justify-content: center;
 
+  }
+  .container-footer .collaborator{
 
-    clip-path: polygon(
-      40% 0%,
-      60% 0%,
-      60% 0%,
-      40% 0%,
-      40% 100%,
-      60% 100%,
-      60% 100%,
-      40% 100%
-    );
+    margin:  15px 25px;
+  }
 
-    Didn't look consistently awesome enough
-    across different viewing widths.
-    clip-path: polygon(
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%,
-      50% 50%
-    );
-    */
-    transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
+  .gradient{
+    display: none;
+    width: 450px;
+    height: 450px;
+  }
+  .collaborator{
+
+    position: relative;
+    border-radius: 33px;
+    width: 50px;
+    height: 50px;
+  }
+  .collaborator:hover:nth-child(1){
+    
+    background-color: #172a04;
+
   }
   
-  .link-four:hover::after {
-    /*
-    clip-path: polygon(
-      20% 45%,
-      10% 40%,
-      30% 30%,
-      40% 35%,
-      60% 35%,
-      70% 30%,
-      90% 40%,
-      80% 45%,
-      60% 35%,
-      40% 35%,
-      20% 45%,
-      20% 55%,
-      10% 60%,
-      30% 70%,
-      40% 65%,
-      60% 65%,
-      70% 70%,
-      90% 60%,
-      80% 55%,
-      60% 65%,
-      40% 65%,
-      20% 55%
-    );
-    */
-    clip-path: polygon(
-      40% 10%,
-      60% 10%,
-      40% 35%,
-      40% 35%,
-
-
-      40% 90%,
-      60% 90%,
-      60% 65%,
-      40% 90%
-    );
+  .collaborator:hover:nth-child(2){
+    background-color: #2a1504;
   }
-  
+
+  .collaborator:hover:nth-child(3){
+    background-color: #042a29
+  }
+
+  .collaborator:hover:nth-child(4){
+    background-color: #12042a
+
+  }
+
+
+  .container-footer img{
+
+    width: 50px;
+    height: 50px;
+
+  }
+
+.footer-info .footer-text{
+    color: white;
+}
+
+
+
