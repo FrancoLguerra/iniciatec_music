@@ -3,47 +3,39 @@
     padding: 0;
     margin: 0;
 }
-.contenido{
-    width: 70vw;
-    height: 70vh;
+.contenido-about{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
 }
-.card-miembro{
-    width: 40%;
-    height: 40%;
+.card-miembros{
+    padding:3%;
+    width:40%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-bottom: 2%;
+   
     transition: 0.5s;
 }
 .card-miembros__img{
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-
+    width:40%;
 }
 .card-miembros__img > img{
-    width: 50%;
-    height: 20%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+width: 100%;
 }
 .card-miembros__info{
     width: 40%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    transition: 0.5s;
 }
-.card-miembro:hover{
-    transform: scale(1.1);
+
+.card-miembros__info > h3,p{
+    width: 100%;
 }
