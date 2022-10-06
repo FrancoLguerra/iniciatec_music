@@ -7,7 +7,7 @@
 .titulo_pagina{
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 3vw;
     color: transparent;
     grid-column: 1/7;
     margin: 0;
@@ -29,8 +29,9 @@
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 0%;
-    height: 60vh;
+    height: 26vw;
     background-image:  url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");
+    /*background: linear-gradient(#2d2d2e, #2d2d2e00, #2d2d2e), url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 25%;
@@ -45,10 +46,12 @@
 .titulos{
     margin-top: 2%;
     margin-bottom: 1%;
-    grid-column: 1/5;
+    margin-left: 2%;
+    margin-right: 50px;
+    grid-column: 1/7;
     display: grid;
     width: 104%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 5px;
     grid-template-rows: 60px;
     justify-items: center;
@@ -56,23 +59,28 @@
     color: rgb(192, 192, 192);
 }
 .titulo1{
-    grid-column: 1/5;
+    grid-column: 1/4;
 }
 .titulo1 h2{
     font-size: 4vw;
     
 }
 .titulo2{
-    grid-column: 5/6;
+    grid-column: 4/5;
     grid-row: 1/2;
     font-size: 1.2vw;
+}
+.titulo3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    font-size: 1.3vw;
 }
                                         /* Artistas mas escuchados*/
 .artistas_mas_escuchados{
     grid-column: 1/5;
     display: grid;
     width: 100%;
-    height: auto;
+    height: 600px;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 5px;
     row-gap: 30px;
@@ -110,5 +118,23 @@
     grid-column: 5/7;
     margin-left: 10%;
     margin-right: 5%;
+    color: rgb(192, 192, 192);
+}
+.recitalespage{
+    position: relative;
+    display: flex;
+    margin-left: 8%;
+    margin-right: 5%;
+    grid-column: 5/7;
+    height: 660px;
     background-color: yellowgreen;
+    padding-bottom: 400px;
+    overflow: hidden;
+}
+.recitalesiframe{
+    position: absolute;
+    display: flex;
+    height: 2130px;
+    width: 100%;
+    bottom: 0px;
 }
