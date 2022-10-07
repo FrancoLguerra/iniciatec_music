@@ -7,14 +7,10 @@
 body{
   background: #2d2d2e;
 }
-main{
-  height: 100vh;
-}
+
+
 .container-hero{
-
-
-
-    background-image: linear-gradient( rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/img-hero.jpg")  !important ;
+    background-image: linear-gradient( rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/img-hero-sin-mic.png")  !important ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +24,7 @@ main{
 
 .container-nav {
     margin: 0;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -354,11 +350,7 @@ main{
     margin:  15px 25px;
   }
 
-  .gradient{
-    display: none;
-    width: 450px;
-    height: 450px;
-  }
+
   .collaborator{
 
     position: relative;
