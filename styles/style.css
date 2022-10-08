@@ -21,6 +21,9 @@ main {
 }
 
 
+.container-header{
+    margin-bottom: 6rem;
+}
 
 .container-nav {
     position: absolute;
@@ -256,7 +259,6 @@ a {
     transform: translate(50%, -50%) rotate(0deg) scale(0);
     transition: transform 1s ease;
     background: rgb(242, 123, 155);
-    background: linear-gradient(137deg, rgba(242, 123, 155, 0.3309698879551821) 0%, rgba(242, 123, 155, 1) 50%, rgba(242, 123, 155, 0.33) 100%);
 }
 
 .link-two:hover::after {
