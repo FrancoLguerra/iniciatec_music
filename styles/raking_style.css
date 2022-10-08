@@ -6,7 +6,7 @@
 }
 
 body{
-   background-color: #2d2d2e;
+  background-color: #151515;
 }
 h3 , h4 , h5{
    text-align: center;
@@ -21,7 +21,7 @@ h4{
 }
 .container_top5{
     width: calc(100% - 4rem);
-    background-color: #151515;
+    background-color: #3b3b3c;
     margin: 2rem;
     margin-bottom: 10vh;
     border-top-left-radius: 10vw;
@@ -120,8 +120,6 @@ h4{
     display: flex;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    /* border: 2px solid black;
-    border-top: none; */
  }
 
  .container_video iframe{
@@ -180,8 +178,7 @@ h4{
  }
 
  .buy_btn a:hover{
-   color: #151515;
-   background-color: #fbfbfbd9;
+   background-color: #2d2d2e;
    transition: 600ms;
  }
 
