@@ -12,7 +12,7 @@ main {
 
 .container-hero {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)), url("../assets/img/NuevaImg.jpg") !important;
+    background-image: linear-gradient(rgba(0, 0, 0, -0.7), rgba(0, 0, 0, 0.7)),  url("../assets/img/NuevaImg.jpg") !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,8 +42,8 @@ main {
 }
 
 
-.link-container{
-    background: linear-gradient(transparent, #15151584);
+.link-container {
+    background: linear-gradient(transparent, #151515);
 }
 
 /*
@@ -239,8 +239,8 @@ a {
             100% 120%,
             100% 100%,
             0% 110%);
-            
-            
+
+
     background: #53d9d1;
 
 
@@ -280,7 +280,7 @@ a {
 
 
 .link-three {
-    color: #eb7132;
+    color: rgb(242, 123, 155);
 }
 
 .link-three::after {
@@ -304,8 +304,8 @@ a {
             60% 20%,
             20% 20%);
 
-    background: rgb(235, 113, 50);
-    background: linear-gradient(180deg, rgba(235, 113, 50, 0.77) 0%, rgba(235, 113, 50, 1) 50%, rgba(235, 113, 50, 0.7707457983193278) 100%);
+    background: rgb(242, 123, 155);
+    background: linear-gradient(180deg, rgba(242, 123, 155, 0.77) 0%, rgba(242, 123, 155, 1) 50%,  rgba(242, 123, 155, 0.7707457983193278) 100%);
 
 }
 
@@ -334,8 +334,9 @@ a {
             40% 80%,
             80% 80%);
 
-    background: rgb(235, 113, 50);
-    background: linear-gradient(180deg, rgba(235, 113, 50, 0.77) 0%, rgba(235, 113, 50, 1) 50%, rgba(235, 113, 50, 0.7707457983193278) 100%);
+
+    background: rgb(242, 123, 155);
+    background: linear-gradient(180deg, rgba(242, 123, 155, 0.77) 0%, rgba(242, 123, 155, 1) 50%, rgba(242, 123, 155, 0.7707457983193278) 100%);
 
 
 
@@ -379,15 +380,13 @@ a {
 
 
 
-.collaborator h6{
+.collaborator h6 {
     color: #949494;
     margin: 0;
     text-align: center;
 }
 
-.collaborator h6:hover{
-
-}
+.collaborator h6:hover {}
 
 
 .collaborator:hover:nth-child(1) {
