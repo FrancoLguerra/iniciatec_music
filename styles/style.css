@@ -1,14 +1,11 @@
-/*          NO UTILIZAR * ESTO APLCIA A TODA LA PAGINA
-*{
-  font-family: 'Kanit', sans-serif;
-  font-size:16px
-
-}*/
+  
+  *{font-family: 'Kanit', sans-serif;
+}
 body{
-  background: #2d2d2e;
+  background: #151515;
 }
 main{
-  height: 100vh;
+  height: auto;
 }
 .container-hero{
     position: relative;
@@ -334,14 +331,12 @@ main{
   
 
 
-
-
-
   .container-footer{
     background-color: #151515;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
   }
 
   .container-collaborators{
