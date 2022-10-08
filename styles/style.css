@@ -207,12 +207,12 @@ a {
 
 
 .link-two {
-    color: #f27b9b;
+    color: #ffffff;
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
 }
 
 .link-two:hover {
-    color: #111;
+    color: #2db9ff;
     transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
@@ -232,8 +232,8 @@ a {
             100% 120%,
             100% 100%,
             0% 110%);
-    background: #f27b9b;
-    background: linear-gradient(180deg, rgba(242, 123, 155, 0.63) 0%, rgba(242, 123, 155, 1) 50%, rgba(242, 123, 155, 0.6334908963585435) 100%);
+    background: rgb(255, 45, 45);
+    background: linear-gradient(180deg, rgb(45, 185, 255, 0.63) 0%, rgb(45, 185, 255, 1) 50%, rgb(45, 185, 255, 0.6334908963585435) 100%);
     transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -252,19 +252,19 @@ a {
     content: "";
     position: absolute;
     z-index: -1;
-    width: 5ch;
-    height: 5ch;
+    width: 3ch;
+    height: 3ch;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%) rotate(0deg) scale(0);
     transition: transform 1s ease;
-    background: rgb(242, 123, 155);
+    background: #F6B50E;
 }
 
 .link-two:hover::after {
     transform: translate(50%, -50%) rotate(135deg) scale(1);
+    clip-path: circle(50% at 50% 50%);
 }
-
 
 
 
