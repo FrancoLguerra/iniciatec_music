@@ -1,8 +1,11 @@
+*{font-family: 'Kanit', sans-serif;
+}
 .rock_nacional{
-    background-color: rgb(0, 0, 0);
+    background-color: #151515;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    column-gap: 25px;
 }
 .titulo_pagina{
     display: flex;
@@ -18,77 +21,83 @@
     background-position-y: 52%;
     background-clip: text;
     -webkit-background-clip: text;
-    
 }
 .titulo_pagina h1{
     margin: 0;
-    margin-bottom: 1%;
 }
 .info{
+    padding: 0;
     grid-column: 1/7;
-    margin-left: 2%;
-    margin-right: 2%;
     margin-top: 0%;
-    height: 26vw;
-    background-image:  url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");
-    /*background: linear-gradient(#2d2d2e, #2d2d2e00, #2d2d2e), url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");*/
+    height: 29vw;/*
+    background-image:  url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");*/
+    background: linear-gradient(black, rgba(0, 0, 0, 0.44), black),
+    url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 25%;
     background-position-y: 52%;
-    font-size: 2.0vw;
+}
+.infop{
+    margin: 0;
+    background-size: 50px;
+    font-size: 1.3vw;
     font-weight: bold;
     border-radius:12px; 
-    color: #ffffff;
-    text-shadow: 0 0 10px rgb(34, 71, 255);
+    color: #fffffff2;
+    background-clip: text;
+    text-shadow: 
+    3px 3px 1px rgb(0, 0, 0),
+    5px 5px 2px #2db9ff,
+    8px 8px 3px #000000;
 }
                                         /*Titulos de Artistas mas escuchados*/
 .titulos{
-    margin-top: 2%;
     margin-bottom: 1%;
-    margin-left: 2%;
-    margin-right: 50px;
     grid-column: 1/7;
     display: grid;
-    width: 104%;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 5px;
     grid-template-rows: 60px;
     justify-items: center;
     align-items: center;
-    color: rgb(192, 192, 192);
+    color: #ffffff;
+    background-color: #2db9ff;
+    text-shadow: 
+    3px 3px 1px rgb(0, 0, 0),
+    5px 5px 2px #2db9ff;
+    height: 100%;
+    background: linear-gradient(black, #2db9ff, black)
 }
 .titulo1{
     grid-column: 1/4;
-}
-.titulo1 h2{
-    font-size: 4vw;
-    
+    font-size: 2vw;
 }
 .titulo2{
     grid-column: 4/5;
     grid-row: 1/2;
-    font-size: 1.2vw;
+    font-size: 2vw;
 }
 .titulo3{
-    grid-column: 5/6;
+    grid-column: 5/7;
     grid-row: 1/2;
-    font-size: 1.3vw;
+    font-size: 2vw;
 }
-                                        /* Artistas mas escuchados*/
+                                /* Artistas mas escuchados*/
 .artistas_mas_escuchados{
     grid-column: 1/5;
     display: grid;
     width: 100%;
-    height: 600px;
+    height: 540px;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 5px;
+    column-gap: 16px;
     row-gap: 30px;
-    padding: 2%;
-    padding-top: 0;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 8%;
     background-color: black;
     color: rgb(192, 192, 192);
-    font-size: 1.1vw;
+    font-size: 1.5vw;
 }
 .lista_exitos{
     grid-column: 5/6;
@@ -101,10 +110,12 @@
 .artista2{
     grid-column: 3/4;
     grid-row: 1/2;
+    margin-bottom: 5%;
 }
 .artista3{
     grid-column: 4/5;
     grid-row: 1/2;
+    margin-bottom: 5%;
 }
 .artista4{
     grid: 3/4;
@@ -114,21 +125,75 @@
     grid-column: 4/5;
     grid-row: 2/3;
 }
-.recitales{
+                        /*          SECTOR RADIO     */
+.radios_vivo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-column: 5/7;
-    margin-left: 10%;
-    margin-right: 5%;
-    color: rgb(192, 192, 192);
+    grid-row: 3/4;
+    row-gap: 2px;
+    width: 92%;
+    background-color: #eceaea;
+    padding-top: 1%;
+    margin-left: 8%;
+    margin-top: 2%;
+    padding-bottom: 4%;
+    border-radius: 8px;
+    }
+    .fondo_radios{
+        grid-column: 5/7;
+        grid-row: 3/4;
+        background-color: #000000;
+    }
+.radio{
+    grid-row: 1/2;
+    display: flex;
+    height: 306px;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    min-width: 280px;
 }
-.recitalespage{
+.radio_iframe{
     position: relative;
     display: flex;
-    margin-left: 8%;
-    margin-right: 5%;
+    width: 700px;
+    height: 500px;
+    bottom: 120px;
+}
+.radio2{
+    grid-row: 2/3;
+    display: flex;
+    height: 306px;
+    width: 100%;
+    overflow: hidden;
+    min-width: 280px;
+}
+.radio2_iframe{
+    position: relative;
+    display: flex;
+    width: 700px;
+    height: 500px;
+    bottom: 120px;
+}
+
+                        /*   SECTOR RECITALES   */
+.conteiner_recital_page{
     grid-column: 5/7;
-    height: 660px;
-    background-color: yellowgreen;
-    padding-bottom: 400px;
+    grid-row: 5/10;
+    overflow: hidden;
+    height: 1100px;
+}
+.recitalespage{
+    grid-column: 5/7;
+    grid-row: 5/6;
+    position: relative;
+    display: flex;
+    margin-top: 4.4%;
+    margin-left: 8%;
+    grid-column: 5/7;
+    height: 1110px;
+    padding-bottom: 68%;
     overflow: hidden;
 }
 .recitalesiframe{
@@ -136,5 +201,97 @@
     display: flex;
     height: 2130px;
     width: 100%;
-    bottom: 0px;
+    bottom: 460px;
+}
+                                /*  SECTOR VIDEOS*/
+.videos{
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: repeat(5, 1fr);
+    margin-right: 0;
+    row-gap: 25px;
+    }
+.videos p{
+    margin-left: 30px;
+    font-size: 1.2vw;
+    color: #dfdfdf;
+}
+.iconos_rock_nacional{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/7;
+    font-size: 2vw;
+    height: 4vw;
+    column-gap: 5px;
+    grid-template-rows: 60px;
+    justify-items: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #2db9ff;
+    text-shadow: 
+    3px 3px 1px rgb(0, 0, 0),
+    5px 5px 2px #2db9ff;
+    background: linear-gradient(black, #2db9ff, #15151500)
+}
+.titulo_rock_nacional{
+    grid-column: 1/5;
+}
+.titulo_recitales{
+    grid-column: 5/7;
+}
+.video{
+    display: flex;
+    grid-column: 1/6;
+    grid-row: 2/3;
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius:12px;
+}
+.video2{
+    display: flex;
+    grid-column: 1/6;
+    grid-row: 3/4;
+    padding: 10px;
+    background-color: rgb(79, 79, 79);
+    border-radius:12px;
+}
+.video3{
+    display: flex;
+    grid-column: 1/6;
+    grid-row: 4/5;
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    border-radius:12px;
+}
+/*
+.info_video1{
+    grid-column: 2/2;
+    grid-row: 2/3;
+    background-color: rgb(44, 44, 44);
+    border-radius:12px;
+}
+.info_video2{
+    grid-column: 2/2;
+    grid-row: 3/4;
+    background-color: rgb(79, 79, 79);
+    border-radius:12px;
+}
+.info_video3{
+    grid-column: 2/2;
+    grid-row: 4/5;
+    background-color: rgb(44, 44, 44);
+    border-radius:12px;
+}
+*/
+/* transicion Nav index -->> genero */
+.background-one {
+    background: linear-gradient(transparent, black);
+}
+
+.background-two {
+    background: linear-gradient(transparent, black);
+}
+
+.background-three {
+    background: linear-gradient(transparent, black);
 }
