@@ -21,7 +21,7 @@ main {
 }
 
 
-.container-header{
+.container-header {
     margin-bottom: 6rem;
 }
 
@@ -106,8 +106,8 @@ a {
     height: 100%;
     top: 0;
     right: 0;
-    background:rgb(217, 96, 83);
-    
+    background: rgb(217, 96, 83);
+
     background: linear-gradient(180deg, rgba(217, 96, 83, 0.0844712885154062) 0%, rgba(217, 96, 83, 0.7175245098039216) 100%);
     clip-path: circle(0% at 50% calc(50%));
     transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
@@ -232,7 +232,7 @@ a {
             100% 120%,
             100% 100%,
             0% 110%);
-    background: rgb(255, 45, 45);
+    background: rgb(45, 185, 255);
     background: linear-gradient(180deg, rgb(45, 185, 255, 0.63) 0%, rgb(45, 185, 255, 1) 50%, rgb(45, 185, 255, 0.6334908963585435) 100%);
     transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -252,17 +252,18 @@ a {
     content: "";
     position: absolute;
     z-index: -1;
-    width: 3ch;
-    height: 3ch;
+    width: 10rem;
+    height: 10rem;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%) rotate(0deg) scale(0);
+    clip-path: circle(0% at 50% 50%);
     transition: transform 1s ease;
     background: #F6B50E;
 }
 
 .link-two:hover::after {
-    transform: translate(50%, -50%) rotate(135deg) scale(1);
+    transform: translate(50%, -50%) rotate(0deg) scale(1);
     clip-path: circle(50% at 50% 50%);
 }
 
