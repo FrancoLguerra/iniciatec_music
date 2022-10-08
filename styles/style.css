@@ -38,8 +38,15 @@ main {
     -webkit-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
     -moz-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
     */
+
 }
 
+
+.link-container{
+    background: linear-gradient(transparent, #15151584);
+}
+
+/*
 .background-one {
     background: linear-gradient(transparent, #151515);
     font-size: 1.5vw;
@@ -57,7 +64,7 @@ main {
     font-size: 1.5vw;
 }
 
-
+*/
 
 .link-container {
     display: flex;
@@ -232,8 +239,12 @@ a {
             100% 120%,
             100% 100%,
             0% 110%);
-    background: rgb(45, 185, 255);
-    background: linear-gradient(180deg, rgb(45, 185, 255, 0.63) 0%, rgb(45, 185, 255, 1) 50%, rgb(45, 185, 255, 0.6334908963585435) 100%);
+            
+            
+    background: #53d9d1;
+
+
+    background: linear-gradient(180deg, rgb(83, 217, 209, 0.63) 0%, rgb(83, 217, 209, 1) 50%, rgb(83, 217, 209, 0.6334908963585435) 100%);
     transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -259,26 +270,13 @@ a {
     transform: translate(50%, -50%) rotate(0deg) scale(0);
     clip-path: circle(0% at 50% 50%);
     transition: transform 1s ease;
-    background: #F6B50E;
+    background: #daa10f;
 }
 
 .link-two:hover::after {
     transform: translate(50%, -50%) rotate(0deg) scale(1);
     clip-path: circle(50% at 50% 50%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .link-three {
@@ -379,9 +377,23 @@ a {
     height: 50px;
 }
 
+
+
+.collaborator h6{
+    color: #949494;
+    margin: 0;
+    text-align: center;
+}
+
+.collaborator h6:hover{
+
+}
+
+
 .collaborator:hover:nth-child(1) {
 
     background-color: #172a04;
+    color: #172a04;
 
 }
 
@@ -404,6 +416,7 @@ a {
     height: 50px;
 
 }
+
 
 .footer-info .footer-text {
     color: white;
