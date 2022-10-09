@@ -53,14 +53,26 @@
 }
 
 .card-miembros__img>img:hover {
-    transform: scale(1.1);
+    transform: scale(1.9);
 }
 
 .card-miembros__info {
     width: 60%;
     padding-left: 2%;
+    padding-right: 2%;
     text-align: center;
 
+}
+.card-miembros__info__nombre {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card-miembros__info__cargo {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 5%;
 }
 
 .card-miembros__info>h3,
@@ -106,6 +118,7 @@ h4 {
     font-size: 50px;
     text-shadow: #d96053 0px 0px 10px;
 }
+
 .contenido-iniciatec>h4{
     margin-top:3%;
     margin-bottom: 2%;
@@ -114,7 +127,7 @@ h4 {
 }
 .contenido-iniciatec p {
     margin-bottom: 3%;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: #d96053 0px 0px 10px;
     width: 65%;
 }
@@ -125,6 +138,7 @@ h4 {
     width: 28%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
 
     text-align: center;
