@@ -19,6 +19,12 @@
 
 
 }
+.contenido-miembros h1{
+    text-align:center;
+    padding-bottom: 5%;
+    text-shadow:rgb(83 217 209) 0px 0px 10px;
+    font-size: 60px;
+}
 
 .card-miembros {
 
@@ -44,6 +50,11 @@
     border-radius: 50px 50px 0px 50px;
 
 }
+.link-container a{
+    font-size: 2.5em;
+    text-align: center;
+  
+  }
 
 .card-miembros__img>img {
     width: 60%;
@@ -211,6 +222,7 @@ input {
     background-color: #2d2d2e;
     border: solid rgb(83 217 209) 1px;
     border-radius:10px;
+    padding:1%;
 }
 .iniciatec{
     width: 100%;
@@ -222,6 +234,7 @@ textarea {
     background-color: #2d2d2e;
     border: solid rgb(83 217 209) 1px;
     border-radius:10px;
+    padding:1%;
 }
 select {
     color: white;
