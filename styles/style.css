@@ -175,32 +175,7 @@ a {
 }
 
 .link-one:hover::after {
-    /*
-            clip-path: polygon(
-            20% 45%,
-            10% 40%,
-            30% 30%,
-            40% 35%,
-            60% 35%,
-            70% 30%,
-            90% 40%,
-            80% 45%,
-            60% 35%,
-            40% 35%,
-            20% 45%,
-            20% 55%,
-            10% 60%,
-            30% 70%,
-            40% 65%,
-            60% 65%,
-            70% 70%,
-            90% 60%,
-            80% 55%,
-            60% 65%,
-            40% 65%,
-            20% 55%
-            );
-            */
+  
     clip-path: polygon(40% 10%,
             60% 10%,
             60% 35%,
@@ -214,12 +189,12 @@ a {
 
 
 .link-two {
-    color: #ffffff;
+    color: #53d9d1;
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
 }
 
 .link-two:hover {
-    color: #2db9ff;
+    color: #1990cc;
     transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
@@ -231,7 +206,9 @@ a {
     height: 100%;
     top: 0;
     right: 0;
-    clip-path: polygon(0% -20%,
+    clip-path: polygon(
+        /*parte 1*/
+            0% -20%,
             100% -30%,
             100% -10%,
             0% 0%,
@@ -249,22 +226,27 @@ a {
 }
 
 .link-two:hover::before {
-    clip-path: polygon(0% 10%,
-            100% 0%,
-            100% 20%,
-            0% 30%,
+    transform: rotate(0deg);
+    clip-path: polygon(
+            
+    /*parte 2*/
+            0% -10%,
+            100% -20%,
+            100% 30%,
+            0% 33%,
+            
             0% 100%,
-            100% 90%,
+            100% 100%,
             100% 70%,
-            0% 80%);
+            -90% 80%);
 }
 
 .link-two::after {
     content: "";
     position: absolute;
     z-index: -1;
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%) rotate(0deg) scale(0);
