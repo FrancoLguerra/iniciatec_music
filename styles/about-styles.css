@@ -25,10 +25,9 @@
     width: 40%;
     background-color: #fff;
     border-radius:  50px 10px 10px 50px;
-    box-shadow: 0 0 10px rgba(247, 190, 190, 0.5);
-    
+    box-shadow: 0 0 10px rgba(247, 190, 190, 0.5);;
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     background-color: #695a59;
     transition: 0.5s;
     justify-content: space-between;
@@ -36,24 +35,25 @@
 
 .card-miembros__img {
     display: flex;
-    width: 30%;
+    width: 40%;
+    height: 100%;
     padding-right: 1%;
     justify-content: center;
     align-items: center;
     background-color: #d96053;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 50px 0px 50px;
 
 }
 
 .card-miembros__img>img {
     width: 60%;
-    height: 50%;
-    border-radius: 100px;
+    height: 70%;
+    border-radius: 120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-miembros__img>img:hover {
-    transform: scale(1.9);
+    transform: scale(1.3);
 }
 
 .card-miembros__info {
