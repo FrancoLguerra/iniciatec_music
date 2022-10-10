@@ -34,9 +34,11 @@ main {
     width: 100%;
     flex-direction: row;
     /*
-        box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
-    -webkit-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
-    -moz-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
+    negro: #151515
+    about: #d96053
+    rankin: #f27b9b
+    genero:  #eb7132
+
     */
 
 }
@@ -75,13 +77,12 @@ main {
     position: relative;
     z-index: 0;
 }
-.link-container a{
-    font-size: 2.5em;
 
-}
+
 a {
     font-family: 'Kanit', sans-serif;
-   text-decoration: none;
+   
+    
 }
 
 
@@ -103,7 +104,7 @@ a {
 
 .link-one:hover {
     color: #111;
-    transition: color 1s cubic-bezier(.17,.67,.92,-0.28);
+    transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
 
     /* Thanks Chris Coyier, you got my back always. https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
 }
@@ -371,7 +372,6 @@ a {
     text-align: center;
 }
 
-.collaborator h6:hover {}
 
 
 .collaborator:hover:nth-child(1) {
