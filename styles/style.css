@@ -34,9 +34,10 @@ main {
     width: 100%;
     flex-direction: row;
     /*
-        box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
-    -webkit-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
-    -moz-box-shadow: 7px 42px 126px -35px rgba(240,224,224,0.63);
+    negro: #151515
+    about: #d96053
+    rankin: #f27b9b
+    genero:  #eb7132
     */
 
 }
@@ -370,8 +371,6 @@ a {
     margin: 0;
     text-align: center;
 }
-
-.collaborator h6:hover {}
 
 
 .collaborator:hover:nth-child(1) {
