@@ -28,6 +28,7 @@ h4{
     border-top-right-radius: 10vw;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px #f27b9b;
 }
 .container_top5 h3{
    height: 7vw;
@@ -80,6 +81,7 @@ h4{
    border-top-right-radius: 24%;
    border-bottom-left-radius: 14px;
    border-bottom-right-radius: 14px;
+   box-shadow: 0 0 10px #f27b9b;
  }
 
  .number_one .container_img{
@@ -150,6 +152,7 @@ h4{
    padding-top: 0.5rem;
    border-top-left-radius: 1rem;
    border-top-right-radius: 1rem;
+   box-shadow: 0 0 10px #f27b9b;
  }
 
  .event_info{
