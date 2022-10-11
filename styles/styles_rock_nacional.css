@@ -23,8 +23,8 @@ body{
     background-size: 100px;
     background-position-x: 25%;
     background-position-y: 52%;
-    background-clip: text;
-    -webkit-background-clip: text;
+    background-clip: text;/**/
+    -webkit-background-clip: text;/**/
 }
 .titulo_pagina h1{
     margin: 0;
@@ -35,7 +35,7 @@ body{
     margin-top: 0%;
     height: 29vw;/*
     background-image:  url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");*/
-    background: linear-gradient(black, rgba(0, 0, 0, 0.44),#151515),
+    background: linear-gradient(#151515, rgba(0, 0, 0, 0.44),#151515),
     url("https://cdn.getcrowder.com/images/1640641688321-polooo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,14 +291,3 @@ h2{
 }
 */
 /* transicion Nav index -->> genero */
-.background-one {
-    background: linear-gradient(transparent, black);
-}
-
-.background-two {
-    background: linear-gradient(transparent, black);
-}
-
-.background-three {
-    background: linear-gradient(transparent, black);
-}
